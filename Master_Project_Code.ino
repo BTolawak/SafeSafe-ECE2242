@@ -116,16 +116,6 @@ void setup() {
   // lcd.clear();
 
 
-  //setupt motion detection
-  // mpu.setHighPassFilter(MPU6050_HIGHPASS_0_63_HZ);
-  // mpu.setMotionDetectionThreshold(1);
-  // mpu.setMotionDetectionDuration(20);
-  // mpu.setInterruptPinLatch(true);	// Keep it latched.  Will turn off when reinitialized.
-  // mpu.setInterruptPinPolarity(true);
-  // mpu.setMotionInterrupt(true);
-
-  // Serial.println("");
-
 
   lockSafe();
 
@@ -264,21 +254,6 @@ myservo.write(90);
 }
 
 
-// //level 1 alarm
-//void alarm1(){
-//  delay(100);
-//  lcd.clear();
-//  delay(100);
-//  lcd.print("First Warning");
-  
-  
-//}
-
-
-//level 2 alarm
-//void alarm2(){
-//  
-//}
 
 void ledOn(){
   digitalWrite(led1,HIGH);
